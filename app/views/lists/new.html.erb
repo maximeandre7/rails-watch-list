@@ -1,0 +1,12 @@
+<div class="container my-5">
+  <div class="row">
+    <div class="col-6 mx-auto">
+      <h1>New List</h1>
+      <%= simple_form_for(@list) do |f| %>
+        <%= f.input :name, placeholder: 'Name of the list'%>
+        <%= f.submit "Submit your list", class: 'btn btn-primary' %>
+        <%= link_to "All lists", lists_path, class: 'btn btn-primary' %>
+      <% end %>
+    </div>
+  </div>
+</div>
